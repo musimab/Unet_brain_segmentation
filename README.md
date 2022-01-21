@@ -24,12 +24,18 @@ brainUnet.cpp file gets path of scripted model  and input image and return predi
 ## results
 
 ### input image
-![TCGA_FG_6689_20020326_29](https://user-images.githubusercontent.com/47300390/150554307-9294c5f2-8460-47e3-a30a-6ce372ab4ad1.png)
+![TCGA_FG_6689_20020326_29](https://user-images.githubusercontent.com/47300390/150556224-8c80d7ce-f536-4e78-ad86-08cb457a0a58.png)
 
 ### target mask
-![TCGA_FG_6689_20020326_29_mask](https://user-images.githubusercontent.com/47300390/150554331-711102c7-d6bd-4727-9619-66e6523fc325.png)
+
+![TCGA_FG_6689_20020326_29_mask](https://user-images.githubusercontent.com/47300390/150556291-afb1fd7f-1627-4479-bca0-2d573a7e78f4.png)
 
 ### predicted mask
-![predicted_mask](https://user-images.githubusercontent.com/47300390/150554472-5d3065fa-bde8-44b7-9b84-28ea85ececf1.png)
+
+![predicted_mask](https://user-images.githubusercontent.com/47300390/150556327-363309f7-22de-4b3c-a65b-0c3e662f8378.png)
+
+
+
+
 
 
