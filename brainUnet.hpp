@@ -20,8 +20,8 @@ class BrainUnetModel{
     void applyMaskRoi(cv::Mat& original_img,cv::Mat& predicted_mask) const;
     void showCountersOfTumor(std::tuple<cv::Mat, cv::Mat>rgb_and_mask_image) const;
     cv::Mat forwardModel();
-    void setModelPath(std::string& model_path);
-    void setDataPath(std::string& data_path);
+    void setModelPath(const std::string& model_path);
+    void setDataPath(const std::string& data_path);
 
     private:
     ~BrainUnetModel()= default;

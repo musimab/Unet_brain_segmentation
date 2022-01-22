@@ -5,13 +5,13 @@ BrainUnetModel& BrainUnetModel::getInstance() {
     return instance;
 }
 
-void BrainUnetModel::setModelPath(std::string& model_path) {
+void BrainUnetModel::setModelPath(const std::string& model_path) {
 
     m_module = torch::jit::load(model_path);
 
 }
 
-void BrainUnetModel::setDataPath(std::string& data_path) {
+void BrainUnetModel::setDataPath(const std::string& data_path) {
 
     m_input_img = cv::imread(data_path);
     
