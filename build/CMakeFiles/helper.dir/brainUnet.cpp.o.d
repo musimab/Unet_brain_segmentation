@@ -1,6 +1,7 @@
-CMakeFiles/unet.dir/brainUnet.cpp.o: \
- /home/mustafa/Desktop/Unet_CPP/brainUnet.cpp /usr/include/stdc-predef.h \
- /home/mustafa/Desktop/Unet_CPP/include/brainUnet.hpp \
+CMakeFiles/helper.dir/brainUnet.cpp.o: \
+ /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/brainUnet.cpp \
+ /usr/include/stdc-predef.h \
+ /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/brainUnet.hpp \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -10,11 +11,10 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/cpu_defines.h \
- /usr/include/c++/9/pstl/pstl_config.h /usr/include/c++/9/ostream \
- /usr/include/c++/9/ios /usr/include/c++/9/iosfwd \
- /usr/include/c++/9/bits/stringfwd.h /usr/include/c++/9/bits/memoryfwd.h \
- /usr/include/c++/9/bits/postypes.h /usr/include/c++/9/cwchar \
- /usr/include/wchar.h \
+ /usr/include/c++/9/ostream /usr/include/c++/9/ios \
+ /usr/include/c++/9/iosfwd /usr/include/c++/9/bits/stringfwd.h \
+ /usr/include/c++/9/bits/memoryfwd.h /usr/include/c++/9/bits/postypes.h \
+ /usr/include/c++/9/cwchar /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
@@ -98,9 +98,7 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /usr/include/c++/9/initializer_list \
  /usr/include/c++/9/bits/basic_string.h \
  /usr/include/c++/9/ext/alloc_traits.h \
- /usr/include/c++/9/bits/alloc_traits.h /usr/include/c++/9/string_view \
- /usr/include/c++/9/limits /usr/include/c++/9/bits/functional_hash.h \
- /usr/include/c++/9/bits/string_view.tcc \
+ /usr/include/c++/9/bits/alloc_traits.h \
  /usr/include/c++/9/ext/string_conversions.h /usr/include/c++/9/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -128,6 +126,7 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+ /usr/include/c++/9/bits/functional_hash.h \
  /usr/include/c++/9/bits/basic_string.tcc \
  /usr/include/c++/9/bits/locale_classes.tcc \
  /usr/include/c++/9/system_error \
@@ -145,8 +144,7 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc /usr/include/c++/9/vector \
  /usr/include/c++/9/bits/stl_construct.h \
- /usr/include/c++/9/bits/stl_uninitialized.h /usr/include/c++/9/utility \
- /usr/include/c++/9/bits/stl_relops.h \
+ /usr/include/c++/9/bits/stl_uninitialized.h \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
  /home/mustafa/Downloads/libtorch/include/torch/script.h \
@@ -157,7 +155,8 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \
  /usr/include/c++/9/bits/uses_allocator.h \
- /usr/include/c++/9/bits/unique_ptr.h /usr/include/c++/9/tuple \
+ /usr/include/c++/9/bits/unique_ptr.h /usr/include/c++/9/utility \
+ /usr/include/c++/9/bits/stl_relops.h /usr/include/c++/9/tuple \
  /usr/include/c++/9/array /usr/include/c++/9/bits/invoke.h \
  /usr/include/c++/9/bits/shared_ptr.h \
  /usr/include/c++/9/bits/shared_ptr_base.h \
@@ -168,8 +167,6 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
- /usr/include/c++/9/pstl/glue_memory_defs.h \
- /usr/include/c++/9/pstl/execution_defs.h \
  /home/mustafa/Downloads/libtorch/include/c10/core/Device.h \
  /home/mustafa/Downloads/libtorch/include/c10/core/DeviceType.h \
  /home/mustafa/Downloads/libtorch/include/c10/macros/Macros.h \
@@ -177,21 +174,16 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /home/mustafa/Downloads/libtorch/include/c10/macros/Export.h \
  /usr/include/c++/9/sstream /usr/include/c++/9/bits/sstream.tcc \
  /usr/include/c++/9/functional /usr/include/c++/9/bits/std_function.h \
- /usr/include/c++/9/unordered_map /usr/include/c++/9/bits/hashtable.h \
- /usr/include/c++/9/bits/hashtable_policy.h \
- /usr/include/c++/9/bits/node_handle.h /usr/include/c++/9/optional \
- /usr/include/c++/9/bits/enable_special_members.h \
- /usr/include/c++/9/bits/unordered_map.h \
- /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/bits/stl_algo.h \
- /usr/include/c++/9/bits/algorithmfwd.h \
- /usr/include/c++/9/bits/stl_heap.h \
- /usr/include/c++/9/bits/uniform_int_dist.h \
  /home/mustafa/Downloads/libtorch/include/c10/util/Exception.h \
  /home/mustafa/Downloads/libtorch/include/c10/util/Deprecated.h \
  /home/mustafa/Downloads/libtorch/include/c10/util/StringUtil.h \
  /home/mustafa/Downloads/libtorch/include/c10/util/string_utils.h \
  /usr/include/c++/9/cstddef \
  /home/mustafa/Downloads/libtorch/include/c10/util/ThreadLocalDebugInfo.h \
+ /usr/include/c++/9/unordered_map /usr/include/c++/9/bits/hashtable.h \
+ /usr/include/c++/9/bits/hashtable_policy.h /usr/include/c++/9/limits \
+ /usr/include/c++/9/bits/unordered_map.h \
+ /usr/include/c++/9/bits/erase_if.h \
  /home/mustafa/Downloads/libtorch/include/c10/util/UniqueVoidPtr.h \
  /home/mustafa/Downloads/libtorch/include/ATen/core/ATenGeneral.h \
  /home/mustafa/Downloads/libtorch/include/ATen/Context.h \
@@ -204,8 +196,10 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /home/mustafa/Downloads/libtorch/include/c10/util/C++17.h \
  /home/mustafa/Downloads/libtorch/include/c10/util/SmallVector.h \
  /home/mustafa/Downloads/libtorch/include/c10/util/AlignOf.h \
- /usr/include/c++/9/algorithm \
- /usr/include/c++/9/pstl/glue_algorithm_defs.h /usr/include/c++/9/cassert \
+ /usr/include/c++/9/algorithm /usr/include/c++/9/bits/stl_algo.h \
+ /usr/include/c++/9/bits/algorithmfwd.h \
+ /usr/include/c++/9/bits/stl_heap.h \
+ /usr/include/c++/9/bits/uniform_int_dist.h /usr/include/c++/9/cassert \
  /usr/include/assert.h /usr/include/c++/9/cstring /usr/include/string.h \
  /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
@@ -236,18 +230,6 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
- /usr/include/c++/9/bits/specfun.h /usr/include/c++/9/tr1/gamma.tcc \
- /usr/include/c++/9/tr1/special_function_util.h \
- /usr/include/c++/9/tr1/bessel_function.tcc \
- /usr/include/c++/9/tr1/beta_function.tcc \
- /usr/include/c++/9/tr1/ell_integral.tcc \
- /usr/include/c++/9/tr1/exp_integral.tcc \
- /usr/include/c++/9/tr1/hypergeometric.tcc \
- /usr/include/c++/9/tr1/legendre_function.tcc \
- /usr/include/c++/9/tr1/modified_bessel_func.tcc \
- /usr/include/c++/9/tr1/poly_hermite.tcc \
- /usr/include/c++/9/tr1/poly_laguerre.tcc \
- /usr/include/c++/9/tr1/riemann_zeta.tcc \
  /home/mustafa/Downloads/libtorch/include/c10/core/MemoryFormat.h \
  /home/mustafa/Downloads/libtorch/include/c10/core/QScheme.h \
  /home/mustafa/Downloads/libtorch/include/c10/core/Stream.h \
@@ -292,7 +274,6 @@ CMakeFiles/unet.dir/brainUnet.cpp.o: \
  /home/mustafa/Downloads/libtorch/include/ATen/core/TensorAccessor.h \
  /home/mustafa/Downloads/libtorch/include/c10/core/TensorImpl.h \
  /usr/include/c++/9/numeric /usr/include/c++/9/bits/stl_numeric.h \
- /usr/include/c++/9/pstl/glue_numeric_defs.h \
  /home/mustafa/Downloads/libtorch/include/c10/core/CopyBytes.h \
  /home/mustafa/Downloads/libtorch/include/c10/core/InferenceMode.h \
  /home/mustafa/Downloads/libtorch/include/c10/core/GradMode.h \

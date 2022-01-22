@@ -1,15 +1,23 @@
-
 #include "brainUnet.hpp"
 
-BrainUnetModel::BrainUnetModel(std::string& img_path, std::string& model_path) {
+BrainUnetModel& BrainUnetModel::getInstance() {
+    static BrainUnetModel instance;
+    return instance;
+}
 
-    m_input_img = cv::imread(img_path);
+void BrainUnetModel::setModelPath(std::string& model_path) {
+
+    m_module = torch::jit::load(model_path);
+
+}
+
+void BrainUnetModel::setDataPath(std::string& data_path) {
+
+    m_input_img = cv::imread(data_path);
     
     if(m_input_img.empty()){
         cout << "Read frame failed" << endl;
     }
-
-    m_module = torch::jit::load(model_path);
 }
 
 cv::Mat BrainUnetModel::forwardModel() {
@@ -56,7 +64,7 @@ cv::Mat BrainUnetModel::toOpencvImage(torch::Tensor& pred_img) {
     return mask_img;
 }
 
-void BrainUnetModel::applyMaskRoi(cv::Mat& original_img, cv::Mat& predicted_mask) {
+void BrainUnetModel::applyMaskRoi(cv::Mat& original_img, cv::Mat& predicted_mask) const {
     
     cout<<"predicted_mask size:" << predicted_mask.size() <<" Ch:"<< predicted_mask.channels() << " "<< predicted_mask.type()<< endl;
     cout<< "original image size:" << original_img.size()<<" Ch:"<< original_img.channels() << " " << original_img.type() <<endl;

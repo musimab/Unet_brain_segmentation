@@ -1,4 +1,5 @@
-CMakeFiles/unet.dir/main_.cpp.o: /home/mustafa/Desktop/Unet_CPP/main_.cpp \
+CMakeFiles/unet.dir/main.cpp.o: \
+ /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -602,4 +603,4 @@ CMakeFiles/unet.dir/main_.cpp.o: /home/mustafa/Desktop/Unet_CPP/main_.cpp \
  /usr/local/include/opencv4/opencv2/video.hpp \
  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
- /home/mustafa/Desktop/Unet_CPP/include/brainUnet.hpp
+ /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/brainUnet.hpp

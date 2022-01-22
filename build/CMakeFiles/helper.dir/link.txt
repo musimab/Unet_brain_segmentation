@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libhelper.a CMakeFiles/helper.dir/brainUnet.cpp.o
+/usr/bin/ranlib ../lib/libhelper.a

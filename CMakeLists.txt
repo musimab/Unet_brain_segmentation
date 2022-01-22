@@ -8,13 +8,18 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 find_package(OpenCV REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
 set(CMAKE_PREFIX_PATH /home/mustafa/Downloads/libtorch)
+
+add_library(helper brainUnet.cpp brainUnet.hpp)
+
 find_package(Torch REQUIRED)
-add_executable(unet main_.cpp brainUnet.cpp)
+add_executable(unet main.cpp)
 
 include_directories(
 ${PROJECT_SOURCE_DIR}/include
 ${OpenCV_INCLUDE_DIRS}
 )
 
+target_link_libraries(helper ${OpenCV_LIBS} ${TORCH_LIBRARIES})
+target_link_libraries(unet helper)
 target_link_libraries(unet ${OpenCV_LIBS} ${TORCH_LIBRARIES})
 set_property(TARGET unet PROPERTY CXX_STANDARD 17)

@@ -54,16 +54,17 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mustafa/Desktop/Unet_CPP
+CMAKE_SOURCE_DIR = /home/mustafa/Desktop/pytorch_cpp/Unet_CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mustafa/Desktop/Unet_CPP/build
+CMAKE_BINARY_DIR = /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/unet.dir/all
+all: CMakeFiles/helper.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,23 +73,24 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/unet.dir/clean
+clean: CMakeFiles/helper.dir/clean
 .PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/unet.dir
 
 # All Build rule for target.
-CMakeFiles/unet.dir/all:
+CMakeFiles/unet.dir/all: CMakeFiles/helper.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mustafa/Desktop/Unet_CPP/build/CMakeFiles --progress-num=1,2,3 "Built target unet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles --progress-num=3,4 "Built target unet"
 .PHONY : CMakeFiles/unet.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/unet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/Unet_CPP/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/unet.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/Unet_CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles 0
 .PHONY : CMakeFiles/unet.dir/rule
 
 # Convenience name for target.
@@ -99,6 +101,32 @@ unet: CMakeFiles/unet.dir/rule
 CMakeFiles/unet.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/clean
 .PHONY : CMakeFiles/unet.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/helper.dir
+
+# All Build rule for target.
+CMakeFiles/helper.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helper.dir/build.make CMakeFiles/helper.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helper.dir/build.make CMakeFiles/helper.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles --progress-num=1,2 "Built target helper"
+.PHONY : CMakeFiles/helper.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/helper.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/helper.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles 0
+.PHONY : CMakeFiles/helper.dir/rule
+
+# Convenience name for target.
+helper: CMakeFiles/helper.dir/rule
+.PHONY : helper
+
+# clean rule for target.
+CMakeFiles/helper.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helper.dir/build.make CMakeFiles/helper.dir/clean
+.PHONY : CMakeFiles/helper.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

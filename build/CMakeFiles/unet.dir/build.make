@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mustafa/Desktop/Unet_CPP
+CMAKE_SOURCE_DIR = /home/mustafa/Desktop/pytorch_cpp/Unet_CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mustafa/Desktop/Unet_CPP/build
+CMAKE_BINARY_DIR = /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/unet.dir/depend.make
@@ -69,45 +69,30 @@ include CMakeFiles/unet.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/unet.dir/flags.make
 
-CMakeFiles/unet.dir/main_.cpp.o: CMakeFiles/unet.dir/flags.make
-CMakeFiles/unet.dir/main_.cpp.o: ../main_.cpp
-CMakeFiles/unet.dir/main_.cpp.o: CMakeFiles/unet.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mustafa/Desktop/Unet_CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/unet.dir/main_.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unet.dir/main_.cpp.o -MF CMakeFiles/unet.dir/main_.cpp.o.d -o CMakeFiles/unet.dir/main_.cpp.o -c /home/mustafa/Desktop/Unet_CPP/main_.cpp
+CMakeFiles/unet.dir/main.cpp.o: CMakeFiles/unet.dir/flags.make
+CMakeFiles/unet.dir/main.cpp.o: ../main.cpp
+CMakeFiles/unet.dir/main.cpp.o: CMakeFiles/unet.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/unet.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unet.dir/main.cpp.o -MF CMakeFiles/unet.dir/main.cpp.o.d -o CMakeFiles/unet.dir/main.cpp.o -c /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/main.cpp
 
-CMakeFiles/unet.dir/main_.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unet.dir/main_.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mustafa/Desktop/Unet_CPP/main_.cpp > CMakeFiles/unet.dir/main_.cpp.i
+CMakeFiles/unet.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unet.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/main.cpp > CMakeFiles/unet.dir/main.cpp.i
 
-CMakeFiles/unet.dir/main_.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unet.dir/main_.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mustafa/Desktop/Unet_CPP/main_.cpp -o CMakeFiles/unet.dir/main_.cpp.s
-
-CMakeFiles/unet.dir/brainUnet.cpp.o: CMakeFiles/unet.dir/flags.make
-CMakeFiles/unet.dir/brainUnet.cpp.o: ../brainUnet.cpp
-CMakeFiles/unet.dir/brainUnet.cpp.o: CMakeFiles/unet.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mustafa/Desktop/Unet_CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/unet.dir/brainUnet.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/unet.dir/brainUnet.cpp.o -MF CMakeFiles/unet.dir/brainUnet.cpp.o.d -o CMakeFiles/unet.dir/brainUnet.cpp.o -c /home/mustafa/Desktop/Unet_CPP/brainUnet.cpp
-
-CMakeFiles/unet.dir/brainUnet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/unet.dir/brainUnet.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mustafa/Desktop/Unet_CPP/brainUnet.cpp > CMakeFiles/unet.dir/brainUnet.cpp.i
-
-CMakeFiles/unet.dir/brainUnet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unet.dir/brainUnet.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mustafa/Desktop/Unet_CPP/brainUnet.cpp -o CMakeFiles/unet.dir/brainUnet.cpp.s
+CMakeFiles/unet.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/unet.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/main.cpp -o CMakeFiles/unet.dir/main.cpp.s
 
 # Object files for target unet
 unet_OBJECTS = \
-"CMakeFiles/unet.dir/main_.cpp.o" \
-"CMakeFiles/unet.dir/brainUnet.cpp.o"
+"CMakeFiles/unet.dir/main.cpp.o"
 
 # External object files for target unet
 unet_EXTERNAL_OBJECTS =
 
-../bin/unet: CMakeFiles/unet.dir/main_.cpp.o
-../bin/unet: CMakeFiles/unet.dir/brainUnet.cpp.o
+../bin/unet: CMakeFiles/unet.dir/main.cpp.o
 ../bin/unet: CMakeFiles/unet.dir/build.make
+../bin/unet: ../lib/libhelper.a
 ../bin/unet: /usr/local/lib/libopencv_gapi.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_stitching.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_alphamat.so.4.5.3
@@ -152,17 +137,17 @@ unet_EXTERNAL_OBJECTS =
 ../bin/unet: /usr/lib/x86_64-linux-gnu/libnvToolsExt.so
 ../bin/unet: /usr/lib/x86_64-linux-gnu/libcudart.so
 ../bin/unet: /home/mustafa/Downloads/libtorch/lib/libc10_cuda.so
-../bin/unet: /usr/local/lib/libopencv_shape.so.4.5.3
+../bin/unet: /usr/local/lib/libopencv_phase_unwrapping.so.4.5.3
+../bin/unet: /usr/local/lib/libopencv_optflow.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_highgui.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_datasets.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_plot.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_text.so.4.5.3
+../bin/unet: /usr/local/lib/libopencv_videoio.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_ml.so.4.5.3
-../bin/unet: /usr/local/lib/libopencv_phase_unwrapping.so.4.5.3
-../bin/unet: /usr/local/lib/libopencv_optflow.so.4.5.3
+../bin/unet: /usr/local/lib/libopencv_shape.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_ximgproc.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_video.so.4.5.3
-../bin/unet: /usr/local/lib/libopencv_videoio.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_dnn.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_imgcodecs.so.4.5.3
 ../bin/unet: /usr/local/lib/libopencv_objdetect.so.4.5.3
@@ -181,7 +166,7 @@ unet_EXTERNAL_OBJECTS =
 ../bin/unet: /usr/lib/x86_64-linux-gnu/libnvToolsExt.so
 ../bin/unet: /usr/lib/x86_64-linux-gnu/libcudart.so
 ../bin/unet: CMakeFiles/unet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mustafa/Desktop/Unet_CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/unet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/unet"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/unet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -193,6 +178,6 @@ CMakeFiles/unet.dir/clean:
 .PHONY : CMakeFiles/unet.dir/clean
 
 CMakeFiles/unet.dir/depend:
-	cd /home/mustafa/Desktop/Unet_CPP/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mustafa/Desktop/Unet_CPP /home/mustafa/Desktop/Unet_CPP /home/mustafa/Desktop/Unet_CPP/build /home/mustafa/Desktop/Unet_CPP/build /home/mustafa/Desktop/Unet_CPP/build/CMakeFiles/unet.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mustafa/Desktop/pytorch_cpp/Unet_CPP /home/mustafa/Desktop/pytorch_cpp/Unet_CPP /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles/unet.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/unet.dir/depend
 

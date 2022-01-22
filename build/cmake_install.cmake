@@ -1,4 +1,4 @@
-# Install script for directory: /home/mustafa/Desktop/Unet_CPP
+# Install script for directory: /home/mustafa/Desktop/pytorch_cpp/Unet_CPP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mustafa/Desktop/Unet_CPP/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

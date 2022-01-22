@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mustafa/Desktop/Unet_CPP
+CMAKE_SOURCE_DIR = /home/mustafa/Desktop/pytorch_cpp/Unet_CPP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mustafa/Desktop/Unet_CPP/build
+CMAKE_BINARY_DIR = /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/Unet_CPP/build/CMakeFiles /home/mustafa/Desktop/Unet_CPP/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/Unet_CPP/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,12 +129,25 @@ unet/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/build
 .PHONY : unet/fast
 
+#=============================================================================
+# Target rules for targets named helper
+
+# Build rule for target.
+helper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helper
+.PHONY : helper
+
+# fast build rule for target.
+helper/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helper.dir/build.make CMakeFiles/helper.dir/build
+.PHONY : helper/fast
+
 brainUnet.o: brainUnet.cpp.o
 .PHONY : brainUnet.o
 
 # target to build an object file
 brainUnet.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/brainUnet.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helper.dir/build.make CMakeFiles/helper.dir/brainUnet.cpp.o
 .PHONY : brainUnet.cpp.o
 
 brainUnet.i: brainUnet.cpp.i
@@ -142,7 +155,7 @@ brainUnet.i: brainUnet.cpp.i
 
 # target to preprocess a source file
 brainUnet.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/brainUnet.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helper.dir/build.make CMakeFiles/helper.dir/brainUnet.cpp.i
 .PHONY : brainUnet.cpp.i
 
 brainUnet.s: brainUnet.cpp.s
@@ -150,32 +163,32 @@ brainUnet.s: brainUnet.cpp.s
 
 # target to generate assembly for a file
 brainUnet.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/brainUnet.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/helper.dir/build.make CMakeFiles/helper.dir/brainUnet.cpp.s
 .PHONY : brainUnet.cpp.s
 
-main_.o: main_.cpp.o
-.PHONY : main_.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-main_.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/main_.cpp.o
-.PHONY : main_.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-main_.i: main_.cpp.i
-.PHONY : main_.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-main_.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/main_.cpp.i
-.PHONY : main_.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main_.s: main_.cpp.s
-.PHONY : main_.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-main_.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/main_.cpp.s
-.PHONY : main_.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unet.dir/build.make CMakeFiles/unet.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -185,13 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... helper"
 	@echo "... unet"
 	@echo "... brainUnet.o"
 	@echo "... brainUnet.i"
 	@echo "... brainUnet.s"
-	@echo "... main_.o"
-	@echo "... main_.i"
-	@echo "... main_.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
