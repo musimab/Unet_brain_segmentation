@@ -19,7 +19,14 @@ Firstly run model_script.py to script python model and it can be load with both 
 
 when you get scripted model you can use it with torchscript library in C++
 
-brainUnet.cpp file gets path of scripted model  and input image and return predicted mask 
+brainUnet.cpp file gets path of scripted model  and input image and return predicted mask
+
+'
+ mkdir build
+     cd build
+       cmake ..
+       
+' 
 
 ## results
 
