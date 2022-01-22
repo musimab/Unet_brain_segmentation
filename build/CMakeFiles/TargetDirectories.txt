@@ -1,4 +1,0 @@
-/home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles/rebuild_cache.dir
-/home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles/unet.dir
-/home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles/edit_cache.dir
-/home/mustafa/Desktop/pytorch_cpp/Unet_CPP/build/CMakeFiles/helper.dir
